@@ -212,10 +212,10 @@ async def on_command_error(ctx, error):
     elif isinstance(error, commands.CommandNotFound):
         return
     else:
-        print(f"Command error: {error}")
-        await ctx.send("⚠️ Something went wrong while running that command.")
+
+    
 
 if not TOKEN:
-    raise RuntimeError("Set the DISCORD_TOKEN environment variable!")
+    raise RuntimeError("Set the DISCORD_TOKEN environment variable)
 
 bot.run(TOKEN)
