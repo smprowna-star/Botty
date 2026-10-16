@@ -1,3 +1,4 @@
+from threading import Thread
 import os
 import re
 import time
@@ -487,5 +488,3 @@ Thread(target=run_web, daemon=True).start()
 
 if __name__ == "__main__":
     bot.run(TOKEN)
-
-from threading import Thread
