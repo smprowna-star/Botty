@@ -20,9 +20,11 @@ TICKET_CATEGORY_ID = int(os.getenv("TICKET_CATEGORY_ID", "0"))
 TICKET_LOG_CHANNEL_ID = int(os.getenv("TICKET_LOG_CHANNEL_ID", "0"))
 GUILD_ID = int(os.getenv("GUILD_ID", "0"))
 DASHBOARD_SECRET = os.getenv("DASHBOARD_SECRET", "")
-DASHBOARD_ENABLED = os.getenv("DASHBOARD_ENABLED", "true").lower() == "true"
-DASHBOARD_HOST = os.getenv("DASHBOARD_HOST", "0.0.0.0")
+
+DASHBOARD_ENABLED = False
+DASHBOARD_HOST = "127.0.0.1"
 DASHBOARD_PORT = int(os.getenv("PORT", "10000"))
+
 
 if not TOKEN:
     raise RuntimeError("Set DISCORD_TOKEN in the environment.")
