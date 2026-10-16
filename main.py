@@ -477,8 +477,6 @@ def start_dashboard():
     dashboard_task = asyncio.create_task(runner())
 
 
-if __name__ == "__main__":
-    bot.run(TOKEN)
 
 
 def run_web():
